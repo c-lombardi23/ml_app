@@ -6,12 +6,12 @@ from PIL import Image
 
 
 # load models from C drive. both cnn and mlp model
-model = tf.keras.models.load_model("C:\\Users\\clombardi\\Downloads\\cleave_model_best_6_6.keras")
-mlp_model = tf.keras.models.load_model("C:\\Users\\clombardi\\Downloads\\best_mlp.keras")
+model = tf.keras.models.load_model("cleave_model_best_6_6.keras")
+mlp_model = tf.keras.models.load_model("best_mlp.keras")
 
 # load scalers
-scaler = jb.load("C:\\Users\\clombardi\\Downloads\\minmax_scaler.pkl")
-tension_scaler = jb.load("C:\\Users\\clombardi\\Downloads\\tension_scaler.pkl")
+scaler = jb.load("minmax_scaler.pkl")
+tension_scaler = jb.load("tension_scaler.pkl")
 
 
 def preprocess_image(uploaded_file):
